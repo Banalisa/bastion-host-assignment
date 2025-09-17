@@ -17,13 +17,13 @@ Private Server → Accessible only from the Bastion Host’s private IP (no publ
 Bastion Host : Port 22(SSH) → Allowed only from my local IP.
 Private Server : Port 22(SSH) → Allowed only from Bastion Host’s private IP.
 3. SSH Configuration in MobaXterm
-Instead of using ~/.ssh/config, MobaXterm allows configuration via the GUI.
+Instead of using /.ssh/config, MobaXterm allows configuration via the GUI.
 -> Connect to Bastion Host
 -> Open MobaXterm → Session → SSH
 -> Enter:
 Remote host : 35.172.223.225 Username: ubuntu
 -> In the Advanced SSH settings tab: - Check Use private key and browse to
-“~/Desktop/bastionKey.pem”.
+“/Desktop/bastionKey.pem”.
 -> Save session as Bastion Host.
 -> Connect to Private Server via Bastion 
 -> Open MobaXterm → Session → SSH.
@@ -35,4 +35,5 @@ Remote host : 35.172.223.225 Username: ubuntu
 -> In the main session window, added the Private Server’s private key under Use
 private key. Save session as Private Server. Now you can double-click Private
 Server in MobaXterm, and it will automatically jump through the Bastion Host.
+
 
